@@ -1,17 +1,30 @@
-# machine_learning_project-unsupervised-learning
+### Wholesale Customer Clustering and PCA Analysis
+## Overview
+This project focuses on applying unsupervised learning techniques to a wholesale dataset. The dataset contains attributes such as Fresh, Milk, Grocery, Frozen, Detergents_Paper, and Delicassen to model and analyze customer purchasing behavior. The main objective is to identify distinct customer segments (clusters) and reduce the complexity of the data using Principal Component Analysis (PCA).
 
-## Project Outcomes
-- Unsupervised Learning: perform unsupervised learning techniques on a wholesale data dataset. The project involves four main parts: exploratory data analysis and pre-processing, KMeans clustering, hierarchical clustering, and PCA.
-### Duration:
-Approximately 1 hour and 40 minutes
-### Project Description:
-In this project, we will apply unsupervised learning techniques to a real-world data set and use data visualization tools to communicate the insights gained from the analysis.
+## Exploratory Data Analysis (EDA)
+During the initial Exploratory Data Analysis (EDA), the following steps were performed:
 
-The data set for this project is the "Wholesale Data" dataset containing information about various products sold by a grocery store.
-The project will involve the following tasks:
+* Data Cleaning: 
+The dataset was checked for missing values, duplicates, and erroneous entries.
+* Correlation Analysis:
+ The correlation matrix was computed to find relationships between variables, highlighting features that are correlated with each other.
+* Outlier Detection: 
+Outliers were identified in the data using the Interquartile Range (IQR) method.
 
--	Exploratory data analysis and pre-processing: We will import and clean the data sets, analyze and visualize the relationships between the different variables, handle missing values and outliers, and perform feature engineering as needed.
--	Unsupervised learning: We will use the Wholesale Data dataset to perform k-means clustering, hierarchical clustering, and principal component analysis (PCA) to identify patterns and group similar data points together. We will determine the optimal number of clusters and communicate the insights gained through data visualization.
+## Unsupervised Learning Techniques
+# K-means Clustering
+K-means clustering was applied to group customers into clusters based on their purchasing patterns. The optimal number of clusters was determined using the Elbow Method.SS
 
-The ultimate goal of the project is to gain insights from the data sets and communicate these insights to stakeholders using appropriate visualizations and metrics to make informed decisions based on the business questions asked."
+The dataset was scaled to ensure that features with different units (e.g., Fresh vs. Milk) do not disproportionately influence the clustering process.
+The model was trained using the chosen number of clusters (3 clusters in this case).
+# Hierarchical Clustering
+Hierarchical Clustering was also applied to create a dendrogram to visualize the hierarchical relationships between customers. This method does not require specifying the number of clusters upfront, allowing us to explore different levels of clustering.
 
+Ward's linkage method was used, which minimizes the variance within clusters at each step.
+The optimal number of clusters was determined by cutting the dendrogram at a specific height.
+# Principal Component Analysis (PCA)
+PCA was used to reduce the dimensionality of the dataset. By transforming the data into a set of principal components, PCA helps capture the most important variance in the data while reducing its complexity.
+
+The first three principal components captured the most variance in the dataset.
+The resulting principal components were used for further analysis and visualization.
