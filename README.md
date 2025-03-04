@@ -28,3 +28,23 @@ PCA was used to reduce the dimensionality of the dataset. By transforming the da
 
 The first three principal components captured the most variance in the dataset.
 The resulting principal components were used for further analysis and visualization.
+
+## Results and Findings
+# Customer Segmentation:
+
+The K-means clustering model grouped customers into 3 clusters, each representing a distinct purchasing behavior pattern.
+Hierarchical clustering further supported this segmentation, showing the relationships between clusters at different levels.
+Principal Component Analysis (PCA):
+
+The first three principal components captured most of the variance in the data, enabling us to reduce the complexity of the dataset.
+'Milk' and 'Grocery' contributed significantly to the first component, while 'Frozen' and 'Delicassen' were important in the second component. The third component showed interactions between 'Fresh' and 'Frozen' items.
+Outliers:
+
+Some outliers were detected in features like 'Milk' and 'Frozen' during the EDA, but further analysis would be required to decide if they should be removed or investigated further.
+## Future Considerations
+Outlier Investigation:
+
+A deeper investigation into the identified outliers can help understand whether they represent genuine anomalies or if they can be removed for better model performance.
+Data Enrichment:
+
+Gathering more data from different customers and regions would help improve the accuracy of the clusters and make the model more robust.
